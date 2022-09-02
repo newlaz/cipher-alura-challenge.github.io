@@ -28,7 +28,14 @@ body {
     align-items: center;
     margin: 0;
     color: var(--white);
+    transition: transform 0.5s;
 }
+
+.title-logo:hover {
+    transform: scale(105%);
+}
+
+
 
 .img-logo {
     width: 3.5em;
@@ -51,10 +58,16 @@ body {
     justify-content: center;
 }
 
+
 .title {
     color: var(--white);
     font-size: 2.5em;
     font-weight: 800;
+    transition: transform 0.6s;
+}
+
+.title:hover {
+    transform: scale(103%);
 }
 
 .content {
@@ -82,7 +95,17 @@ body {
     resize: none;
     background-color: var(--darker-color);
     color: var(--white);
+    transition: transform 0.6s;
 }
+
+.input:hover {
+    transform: scale(102%);
+}
+
+.input:focus {
+    transform: scale(102%);
+}
+
 
 .container-btn {
     width: 100%;
@@ -102,7 +125,15 @@ body {
     color: var(--white);
     font-size: 14pt;
     box-sizing: border-box;
+    transition: transform 0.4s;
 }
+
+.btn:hover {
+    transform: scale(105%);
+    box-shadow: 0 0 1px var(--light-color);
+}
+
+
 
 
 .btn-cifrar {

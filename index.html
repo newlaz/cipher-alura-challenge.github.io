@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura - Encriptador</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/encriptado.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title-logo">
+            <img src="img/logo.png" alt="logo de lebryan representacion animada" class="img-logo">
+            Bryan Lazo
+        </h1>
+    </header>
+    <main class="container">
+        <section class="title-container">
+            <h2 class="title">Challenge Alura - Encriptador</h2>
+        </section>
+        <section class="content">
+            <article class="content-input">
+                <textarea id="cipher-text" class="input cipher-text" placeholder="Ingrese su texto"
+                    autocomplete="off"></textarea>
+                <div class="container-btn">
+                    <button onclick="cipher()" class="btn btn-cifrar">Cifrar</button>
+                    <button onclick="uncipher()" class="btn btn-descifrar">Descifrar</button>
+                </div>
+            </article>
+            <article class="content-input">
+                <textarea name="text-result" id="cipher-result" class="input cipher-result"
+                    placeholder="Resultado" readonly></textarea>
+                <div class="container-btn">
+                    <button onclick="copy()" class="btn btn-copiar">Copiar</button>
+                    <button onclick="clearInputs()" class="btn btn-limpiar">Limpiar</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
